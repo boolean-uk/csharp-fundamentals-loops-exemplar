@@ -3,13 +3,14 @@ using NUnit.Framework;
 
 namespace csharp_fundamentals_loops.Test
 {
-    public class ExerciseTest
+    [TestFixture]
+    public class CoreTests
     {
-        Exercise _exercise;
+        Core _exercise;
 
-        public ExerciseTest()
+        public CoreTests()
         {
-            this._exercise = new Exercise();
+            this._exercise = new Core();
         }
 
          [Test]
@@ -61,7 +62,7 @@ namespace csharp_fundamentals_loops.Test
             }          
         }
 
-        [Test]
+        [Test]        
         public void isMyNumberAFavourite()
         {
             Assert.AreEqual(true, this._exercise.stepFour(1));
